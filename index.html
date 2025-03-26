@@ -7,60 +7,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            background-color: #ffffff;
-            color: black;
+            background: linear-gradient(135deg, hsl(0, 79%, 54%), #1a1a1a);
+            color: white;
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 30px;
         }
         .header {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
         .logo-img {
-            width: 170px;
+            width: 140px;
             height: auto;
-            margin-right: 10px;
         }
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            max-width: 800px;
+            gap: 10px;
+            max-width: 500px;
             margin: auto;
         }
         .card {
-            background: #ffcc00;
-            padding: 15px;
-            width: 220px;
-            height: 120px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(145deg, #fbbe07, #cf9101);
+            padding: 10px;
+            width: 120px;
+            height: 70px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #00000066;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            color: black;
-            font-size: 18px;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
             font-weight: bold;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
         }
         .card:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(60, 58, 0, 0.6);
+            background: linear-gradient(145deg, #ffd700, #cfa500);
         }
         .card i {
-            font-size: 36px;
-            margin-bottom: 8px;
+            font-size: 22px;
+            margin-bottom: 4px;
         }
         .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #333;
+            margin-top: 30px;
+            font-size: 10px;
+            color: #747070;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
     </style>
 </head>
@@ -73,11 +77,14 @@
     <div class="container">
         <a href="https://www.instagram.com/franklinslectures/" target="_blank" class="card"><i class="fab fa-instagram"></i> Instagram</a>
         <a href="https://www.youtube.com/@franklinslectureskerala" target="_blank" class="card"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="https://x.com/lectures51815" target="_blank" class="card"><i class="fab fa-twitter"></i> X (Twitter)</a>
-        <a href="https://www.facebook.com/people/Franklins-Lectures/61567442673802/" target="_blank" class="card"><i class="fab fa-facebook"></i> Facebook</a>
         <a href="https://wa.me/9074745741" target="_blank" class="card"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://www.facebook.com/people/Franklins-Lectures/61567442673802/" target="_blank" class="card"><i class="fab fa-facebook"></i> Facebook</a>
         <a href="https://in.linkedin.com/company/franklins-lectures" target="_blank" class="card"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://x.com/lectures51815" target="_blank" class="card"><i class="fab fa-twitter"></i> X (Twitter)</a>
+        <!-- <a href="https://franklinslectures.in/" target="_blank" class="card"><i class="fas fa-earth"></i> Website</a> -->
         <a href="https://franklinslectures.in/" target="_blank" class="card"><i class="fas fa-globe"></i> Website</a>
+        <a href="https://franklinslectures.in/" target="_blank" class="card"><i class="fas fa-globe"></i> Website</a>
+
     </div>
     <div class="footer">
         &copy; 2025 Franklin's Lectures. All rights reserved.
