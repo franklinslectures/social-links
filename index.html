@@ -11,50 +11,52 @@
             color: white;
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            padding: 100px 20px;
+            padding: 40px 20px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
         .header {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 15px;
+            margin-bottom: -70px;
+            margin-top: -50px;
+
         }
         .logo-img {
-            width: 140px;
+            width: 180px;
             height: auto;
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
-            max-width: 500px;
+            max-width: 400px;
             margin: auto;
         }
         .card {
             background: linear-gradient(145deg, #fbbe07, #cf9101);
-            padding: 10px;
-            height: 70px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px #00000066;
+            padding: 20px;
+            height: 35px;
+            border-radius: 25px;
+            box-shadow: 0 12px 7px #00000066;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-decoration: none;
             color: rgb(0, 0, 0);
-            font-size: 12px;
+            font-size: 14px;
             font-weight: bold;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             position: relative;
             overflow: hidden;
         }
         .card:hover {
-            transform: scale(1.05);
+  
             box-shadow: 0 6px 15px rgba(60, 58, 0, 0.6);
             background: linear-gradient(145deg, #ffd700, #cfa500);
         }
@@ -63,11 +65,16 @@
             margin-bottom: 4px;
         }
         .footer {
-            margin-top: 30px;
+            margin-top: -40px;
             font-size: 10px;
-            color: #747070;
+            color: #977171;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+        .container a:nth-child(odd):last-child {
+            grid-column: span 2;
+            justify-self: center;
+            width: 82%;
         }
     </style>
 </head>
