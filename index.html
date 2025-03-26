@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            background: linear-gradient(135deg, hsl(0, 79%, 54%), #1a1a1a);
+            background: linear-gradient(135deg, #e62d2d, #1a1a1a);
             color: white;
             font-family: 'Poppins', sans-serif;
             text-align: center;
@@ -71,6 +71,17 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+        @media (max-width: 480px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .card:last-child:nth-child(odd) {
+                grid-column: span 2;
+                width: 93%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,9 +97,10 @@
         <a href="https://www.facebook.com/people/Franklins-Lectures/61567442673802/" target="_blank" class="card"><i class="fab fa-facebook"></i> Facebook</a>
         <a href="https://wa.me/9074745741" target="_blank" class="card"><i class="fab fa-whatsapp"></i> WhatsApp</a>
         <a href="https://in.linkedin.com/company/franklins-lectures" target="_blank" class="card"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://franklinslectures.in/" target="_blank" class="card"><i class="fas fa-globe"></i> Website</a>
         <a href="https://t.me/franklinslectures" target="_blank" class="card"><i class="fab fa-telegram"></i> Telegram</a>
         <a href="https://x.com/lectures51815" target="_blank" class="card"><i class="fab fa-twitter"></i> X (Twitter)</a>
+        <a href="https://franklinslectures.in/" target="_blank" class="card"><i class="fas fa-globe"></i> Website</a>
+
 
     </div>
     <div class="footer">
