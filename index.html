@@ -11,7 +11,7 @@
             color: white;
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            padding: 100px;
+            padding: 100px 20px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -29,9 +29,8 @@
             height: auto;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             gap: 10px;
             max-width: 500px;
             margin: auto;
@@ -39,7 +38,6 @@
         .card {
             background: linear-gradient(145deg, #fbbe07, #cf9101);
             padding: 10px;
-            width: 120px;
             height: 70px;
             border-radius: 10px;
             box-shadow: 0 4px 10px #00000066;
@@ -71,17 +69,6 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        @media (max-width: 480px) {
-            .container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            .card:last-child:nth-child(odd) {
-                grid-column: span 2;
-                width: 93%;
-            }
-        }
     </style>
 </head>
 <body>
@@ -100,8 +87,6 @@
         <a href="https://t.me/franklinslectures" target="_blank" class="card"><i class="fab fa-telegram"></i> Telegram</a>
         <a href="https://x.com/lectures51815" target="_blank" class="card"><i class="fab fa-twitter"></i> X (Twitter)</a>
         <a href="https://franklinslectures.in/" target="_blank" class="card"><i class="fas fa-globe"></i> Website</a>
-
-
     </div>
     <div class="footer">
         &copy; 2025 Franklin's Lectures. All rights reserved.
